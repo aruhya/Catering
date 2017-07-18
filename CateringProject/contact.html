@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>contact</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  	<style type="text/css">
+ 	.form{
+ 	margin: 5% auto auto auto;
+	width: 40%;
+	background-color: white;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	
+}
+.form h1{
+	text-align: center;
+	margin-bottom: 20px;
+	width: 100%;
+}
+.form form{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.flex-rev {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 10px;
+		width: 100%;
+}
+
+.flex-rev input, .flex-rev textarea {
+    border: none;
+    background-color: #e6e6e6;
+    padding: 12px 10px;
+    font-size: 16px;
+    resize: none;
+    margin-top: 7px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    color: #243342;
+    outline-color: #243342;
+    outline-width: thin;
+	 -webkit-appearance: none;
+}
+.flex-rev textarea{
+	height: 150px;
+}
+button{
+	-webkit-appearance: none;
+	margin-right: 0;
+}
+
+  	</style>
+</head>
+<body>
+<!--navigation bar -->
+<div>
+	<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">CATER</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li ><a href="home.html">HOME</a></li>
+		  <li><a id="Menubtn" href="menu.html" ng-options="{activeSmall:part=='Menu'}" > Menu </a></li>
+        <li class="active"><a href="contact.html">CATERING <span class="sr-only">(current)</span></a></li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+		  <li style="margin-right:0px"><a id="LOGIN" class="active" href="#"
+										  ng-click="showform()">LOG IN</a> </li>
+		  <li style="margin-right:0px"><a id="SignUP" class="active" href="#"
+										  ng-click="showform()"> SIGN UP</a> </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
+<!-- contactdivs -->
+<div class="form">
+	<h1>Get In Touch</h1>
+	<form action="">
+		<div class="flex-rev">
+			<input type="text" placeholder="First Name Last Name" name="name" id="name" />
+			<label for="name">Full Name</label>
+		</div>
+		<div class="flex-rev">
+			<input type="email" placeholder="example@example.com" name="email" id="email" />
+			<label for="email">Your Email</label>
+		</div>
+
+		<div class="flex-rev">
+			<textarea placeholder="I have a message for you ...." name="message" id="message" /></textarea>
+			<label for="message">Email Message</label>
+		</div>
+			<button class="btn btn-default" type="submit">Send Email</button>
+	</form>
+</div>
+
+</body>
+</html>

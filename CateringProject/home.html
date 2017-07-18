@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HOME</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--navigation bar -->
+<div>
+	<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">CATER</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="home.html">HOME <span class="sr-only">(current)</span></a></li>
+        <li><a id="Cateringbtn" href="#" ng-class="{activeSmall:part=='Catering'}" > Catering </a></li>
+        <li><a id="Menubtn" href="menu.html" ng-options="{activeSmall:part=='Menu'}" > Menu </a></li>
+        <li><a id="Contact Us" href="contact.html" ng-class="{activeSmall:part=='Contact Us'}" > Contact Us</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li style="margin-right:0px"><a id="LOGIN" class="active" href="#"
+                                        ng-click="showform()">LOG IN</a> </li>
+        <li style="margin-right:0px"><a id="SignUP" class="active" href="#"
+                                        ng-click="showform()"> SIGN UP</a> </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
+
+<!--carousel begins -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel" style="height: 60%">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/B1.jpg" alt="Chania">
+      <div class="carousel-caption">
+        <h3>Los Angeles</h3>
+        <p>LA is always so much fun!</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/B2.jpg" alt="Chicago">
+      <div class="carousel-caption">
+        <h3>Chicago</h3>
+        <p>Thank you, Chicago!</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/B3.jpg" alt="New York">
+      <div class="carousel-caption">
+        <h3>New York</h3>
+        <p>We love the Big Apple!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!--email subscription -->
+<div  class="container-fluid" style="background-color: #cd6725" >
+	<h3 style="color: #000000; text-align: center">Please subscribe with us</h3>
+    <form >
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Email" style="width: 30%; margin: 0 auto;">
+          <button type="submit" class="btn btn-default" style="margin: 0 10% 0 45%;">Subscibe</button>
+        </div>
+        
+      </form>
+</div>
+
+<!--end div -->
+<div  class="container-fluid" style="background-color: #542b1f; text-align: center;">
+	<h2 style="color: #000000"><strong> CATERING</strong></h2>
+	<h3 style="color: #000000">ADDRESS</h3>
+	<h3 style="color: #000000">PHONE NUMBER</h3>
+	<h3 style="color: #000000">TAG LINE</h3>
+</div>
+</body>
+</html>
